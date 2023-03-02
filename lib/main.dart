@@ -8,9 +8,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'My App',
         home: Scaffold(
-            appBar: AppBar(title: Text("My App")),
-            body: const Center(
-              child: Text('Olá'),
+            appBar: AppBar(
+              title: Text("Widget App"),
+              centerTitle: true,
+              backgroundColor: Colors.deepPurple,
+            ),
+            body: const Padding(
+              padding: EdgeInsets.all(12),
+              child: Text('Widget App'),
             )));
   }
 }
